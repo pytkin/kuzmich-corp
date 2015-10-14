@@ -1,0 +1,32 @@
+//
+// Breadcrumbs
+// -------------------------------------------------- //
+
+.breadcrumbs {
+  list-style none
+  margin 0
+  padding 10px 0 6px
+  font-size 1.2rem
+  color #b3b3b3
+
+  li {
+    display inline-block
+
+    &:after {
+      content "/"
+      padding 0 2px 0 5px
+    }
+    &:last-child {
+      &:after {
+        display none
+      }
+    }
+  }
+  a {
+    color #b3b3b3
+
+    &:hover {
+      color darken(#b3b3b3, 15%)
+    }
+  }
+}

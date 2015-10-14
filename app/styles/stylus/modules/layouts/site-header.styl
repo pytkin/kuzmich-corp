@@ -1,0 +1,153 @@
+//
+// Layouts / Site Header
+// -------------------------------------------------- //
+
+.site-header {
+  position relative
+  background url(../img/static/header-bg-pattern.png) repeat-x 0 0
+  padding-top 213px
+
+  .wrapper {
+    min-height 261px
+    margin-top -213px
+  }
+  &:before {
+    content ''
+    position absolute
+    display block
+    background url(../img/static/header-bg-pattern.png) repeat-x 0 0
+    top 0
+    left 0
+    right 0
+    height 135px
+    z-index 1
+  }
+  .logo {
+    display block
+    position absolute
+    top 0
+    left 0
+    width 318px
+    height 209px
+    background url(../img/static/logo.png) no-repeat 0 0 #b29769
+    z-index 2
+  }
+  .top-panel-manu {
+    position absolute
+    top 17px
+    left 353px
+    list-style none
+    margin 0
+    padding 0
+    z-index 2
+    text-transform uppercase
+    color #683f16
+
+    li {
+      display inline-block
+      margin-right 34px
+    }
+    .divider {
+      padding 0 5px
+    }
+    a {
+      color #683f16
+
+      &:hover {
+        color lighten(#683f16, 15%)
+      }
+    }
+  }
+  .site-slogan {
+    position absolute
+    top 55px
+    left 353px
+    font-size 2.64rem
+    line-height 1.2
+    color #683f16
+    z-index 3
+    text-transform uppercase
+    letter-spacing 0.014em
+
+    strong {
+      font-weight bold
+      font-size 2.95rem
+    }
+  }
+  .main-nav {
+    position absolute
+    display block
+    top 135px
+    left 330px
+    z-index 3
+
+    > ul {
+      list-style none
+      margin 0
+      padding 0
+      clearfix()
+    }
+    li {
+      float left
+      height 78px
+      border-bottom 12px solid #00a099
+    }
+    a {
+      display inline-block
+      padding 16px 22px 4px
+      text-transform uppercase
+      color #b29769
+      font-weight bold
+
+      span {
+        font-weight 300
+      }
+      &:hover {
+        color #683f16
+        text-decoration none
+      }
+    }
+    &.is-active-items {
+      li {
+        border-bottom-color transparent
+
+        &.active {
+          border-bottom-color #00a099
+        }
+      }
+    }
+  }
+  .third-menu {
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    display block
+    background-color #00a099
+    list-style none
+    margin 0
+    padding 0 7px
+    height 48px
+
+    li {
+      display inline-block
+
+      &.active span {
+        color #fff
+      }
+    }
+    a,
+    span {
+      display inline-block
+      padding 17px 23px
+      font-size 1.5rem
+      line-height 1
+      max-height 48px
+      color mix(#00a099, #fff, 50%)
+
+      &:hover {
+        color #fff
+      }
+    }
+  }
+}

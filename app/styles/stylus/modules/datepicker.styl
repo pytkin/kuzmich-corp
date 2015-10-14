@@ -1,0 +1,139 @@
+//
+// Datepicker
+// -------------------------------------------------- //
+
+.datepicker-holder {
+  position absolute
+  z-index 1000
+}
+.ui-datepicker {
+  box-sizing content-box
+  padding 20px
+  display none
+  background-color #fff
+  box-shadow -3px 4px 21px rgba(0,0,0,.14)
+  z-index 1000
+}
+.ui-datepicker .ui-datepicker-header {
+  position relative
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position absolute
+  top 7px
+  width 36px
+  height 36px
+  border-radius 50%
+  text-align center
+  text-decoration none
+  display flex
+  justify-content center
+  align-items center
+}
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+  color #000
+  transition background-color .3s ease-in-out
+
+  .icon {
+    position: relative
+    transition fill .3s ease-in-out
+  }
+  &.ui-state-disabled {
+    color #a5a5a5
+  }
+}
+.ui-datepicker .ui-datepicker-next .icon {
+  right -1px
+}
+.ui-datepicker .ui-datepicker-prev .icon {
+  left -1px
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+  background-color brand-primary
+  color #fff
+  cursor pointer
+
+  &.ui-state-disabled {
+    background-color #fff
+    color #a5a5a5
+    cursor default
+  }
+}
+.ui-datepicker .ui-datepicker-prev {
+  left 0
+}
+.ui-datepicker .ui-datepicker-next {
+  right 0
+}
+.ui-datepicker .ui-datepicker-title {
+  margin 0 50px
+  line-height 50px
+  text-align center
+  font-size 1.8rem
+  text-transform uppercase
+  font-weight bold
+}
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month {
+  color brand-primary
+}
+.ui-datepicker .ui-datepicker-title select {
+  font-size 1em
+  margin 1px 0
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width 45%
+}
+.ui-datepicker table {
+  width 100%
+  font-size 1.6rem
+  border-collapse collapse
+  margin 0
+}
+.ui-datepicker th {
+  padding 0 0 11px
+  text-align center
+  text-transform uppercase
+  width 50px
+  height 50px
+  border none
+  font-weight 500
+  font-size 1.2rem
+  vertical-align bottom
+  color: #cbcbcb
+}
+.ui-datepicker td {
+  text-align center
+  padding 6px 5px
+
+  &.ui-datepicker-unselectable span {
+    color #a5a5a5
+  }
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display inline-block
+  text-align center
+  text-decoration none
+  width 36px
+  height 36px
+  line-height 36px
+  border-radius 50%
+  font-size 1.4rem
+  font-weight 500
+  color: #000
+  letter-spacing 0.15em
+  -webkit-font-smoothing subpixel-antialiased
+  -moz-osx-font-smoothing auto
+}
+.ui-datepicker td .ui-state-active {
+  background-color brand-primary
+  color #fff
+  text-indent 2px
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  display none
+}
