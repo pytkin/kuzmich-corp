@@ -11,9 +11,9 @@
 sudo npm install -g bower
 ```
 
-Далее клонируем проект из этого репозитория (проект будет скопирован в папку `pytkin-weatherapp` - поменять, если нужно, на свою):
+Далее клонируем проект из этого репозитория (проект будет скопирован в папку `kuzmich-corp` - поменять, если нужно, на свою):
 ```
-git clone https://github.com/pytkin/weatherapp.git pytkin-weatherapp
+git clone https://github.com/pytkin/kuzmich-corp.git
 ```
 
 ##Устанавливаем зависимости
@@ -35,5 +35,5 @@ bower install
 
 ##Зеркало
 
-Если устанавливать и запускать проект лень, с ним можно ознакомиться по этой ссылке: [http://pytkin.ru/share/weatherapp/](http://pytkin.ru/share/weatherapp/)
+Если устанавливать и запускать проект лень, с ним можно ознакомиться по этой ссылке: [http://pytkin.ru/share/kuzmich-corp/](http://pytkin.ru/share/kuzmich-corp/)
 
