@@ -155,3 +155,98 @@
     font-size 1.8rem
   }
 }
+
+.signup-form {
+  background-color #d8c2a3
+  font-size 2.1rem
+  padding 38px 38px 0
+
+  .form-actions {
+    position relative
+    margin 0 -38px
+    background-color #00a099
+    padding 36px 0
+    text-align center
+
+    [type="submit"] {
+      border none
+      background-color #fff
+      background-image none
+      line-height 1.2
+      padding 9px 17px
+    }
+  }
+  fieldset {
+    border-bottom 1px solid #fff
+    margin-bottom 25px
+
+    &.no-border {
+      border-bottom none
+    }
+
+    .form-group {
+      clearfix()
+      border-bottom none
+      padding-bottom 0
+      margin-bottom 20px
+
+      label {
+        width 224px
+        display block
+        float left
+        margin-bottom 0
+        padding 10px 0
+        line-height 1.1
+
+        & + .form-control {
+          float left
+          width calc(100% - 224px)
+        }
+      }
+    }
+  }
+  .form-group {
+    border-bottom 1px solid #fff
+    padding-bottom 15px
+    margin-bottom 26px
+
+    label {
+      margin-bottom 22px
+
+      span {
+        color #978772
+      }
+    }
+  }
+  .radio-group {
+    padding-bottom 23px
+    margin-bottom 26px
+    border-bottom 1px solid #fff
+
+    label {
+      margin-bottom 0
+    }
+    .radio-inline {
+      margin-left 95px
+    }
+  }
+  .file-group {
+    padding-bottom 26px
+    margin-bottom 26px
+    border-bottom 1px solid #fff
+
+    label {
+      margin-bottom 0
+
+      & > span {
+        color #978772
+      }
+    }
+    input[type="file"] {
+      display inline-block
+      font-size 1.6rem
+      line-height 1
+      margin-left 100px
+    }
+  }
+}
