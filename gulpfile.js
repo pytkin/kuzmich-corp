@@ -44,9 +44,9 @@ gulp.task('html', ['styles'], function () {
 
 	return gulp.src('app/**/*.html')
 		.pipe(assets)
-		.pipe($.if('*.js', $.cache($.uglify())))
+		//.pipe($.if('*.js', $.cache($.uglify())))
 		.pipe($.if('*.css', $.csscomb()))
-		.pipe($.if('*.css', $.csso()))
+		//.pipe($.if('*.css', $.csso()))
 		.pipe(assets.restore())
 		.pipe($.useref())
 		.pipe(gulp.dest('dist'));
