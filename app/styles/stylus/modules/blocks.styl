@@ -66,14 +66,26 @@
   margin-bottom 22px
 
   .block-text-wrapper {
+    position relative
     width 900px
     margin 0 auto
     padding 15px 0 5px
+    overflow hidden
+    max-height 115px
+    transition max-height .3s ease-in-out
+    clearfix()
   }
   h3 {
     font-size 2rem
     text-transform uppercase
     margin 0 0 10px
+  }
+  .toggle-link {
+    color #cfbea1
+    position absolute
+    bottom 10px
+    right 0
+    font-size 1.6rem
   }
 }
 
