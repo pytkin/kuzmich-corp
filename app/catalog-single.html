@@ -9,13 +9,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Kuzmich corp.</title>
 
+		<!-- build:css css/main.css -->
+		<link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<!-- endbuild -->
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	    <!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	    <![endif]-->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<header class="site-header">
@@ -45,30 +48,75 @@
 			<div class="wrapper">
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
-					<li><a href="#">Создание ЛПХ</a></li>
-					<li><a href="#">Образцовая усадьба в селе Никольское</a></li>
-					<li><span>Описание усадьбы и миссии проекта</span></li>
+					<li><a href="#">Каталог ЛПХ</a></li>
+					<li><a href="#">Выбрать усадьбу</a></li>
+					<li><span>Название этой усадьбы</span></li>
 				</ul>
-				<div class="inner-page">
+				<div class="inner-page catalog-single">
 					<div class="block-header">
-						<h2>О натуральных продуктах</h2>
+						<h2>Название этой усадьбы</h2>
+
+						<ul class="rating">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="empty"></li>
+						</ul>
 					</div>
 					<div class="block-body">
-						<div class="page-image-holder">
-							<img src="img/temp/image-03.png" alt="" width="940" height="315">
+						<div class="description-col">
+							<p>Адрес: <strong>Орловская область, Покровский район, д.Покровское, ул.Мира, 54</strong></p>
+							<p><strong>Описание</strong></p>
+
+							<p>Апарт-отель «7 чудес» расположен в 10 минутах ходьбы от железнодорожного вокзала
+							Белгорода. Гостям предлагается проживание в номерах-студио с мини-кухней. Бесплатный
+							WiFi предоставляется на всей территории апарт-отеля.Номера-студио оборудованы
+							микроволновой печью, холодильником, электрическим чайником и кухонной посудой.</p>
+
+							<p>Среди прочих удобств телевизор со спутниковыми каналами, обеденный стол, письменный
+							стол и собственная ванная комната с душем.Кроме того, в апарт-отеле работает круглосуточная
+							стойка регистрации и предоставляются услуги прачечной.Диорама «Курская Дуга» находится
+							в 15 минутах ходьбы, а Белгородская филармония — в 12 минутах.</p>
+
+							<p>Расстояние до международного аэропорта Белгорода составляет 7 км.</p>
+
+							<p><strong>В усадьбе есть:</strong><br>
+							коровы, кролики, гуси, куры, утки, индюки.
+							В доме живет ласковый кот.</p>
+
+							<p><strong>Продукты из усадьбы:</strong><br>
+							молоко, творог, масло, сливки, простокваша, топленое молоко, сыворотка
+							картофель, лук, капуста квашеная и свежая, морковь, свекла, репа, редис,
+							яблоки, сливы, терн, груши, малиновое варенье, замороженная малина.</p>
+							<a href="#" class="show-on-map">Посмотреть на карте</a>
 						</div>
-						<ul class="side-nav">
-							<li class="active"><a href="#">Описание усадьбы и миссии проекта</a></li>
-							<li><a href="#">Фотоотчет о проделанной работе</a></li>
-							<li><a href="#">Планировка участка</a></li>
-						</ul>
-						<div class="block-text">
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-							<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.  Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.  Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						<div class="right-col">
+							<ul class="image-gallery">
+								<li class="main-image">
+									<img src="img/temp/image-10.jpg" alt="">
+								</li>
+								<li><img src="img/temp/image-11.jpg" alt=""></li>
+								<li><img src="img/temp/image-11.jpg" alt=""></li>
+								<li><img src="img/temp/image-11.jpg" alt=""></li>
+								<li><img src="img/temp/image-11.jpg" alt=""></li>
+								<li><img src="img/temp/image-11.jpg" alt=""></li>
+								<li><img src="img/temp/image-11.jpg" alt=""></li>
+								<li><img src="img/temp/image-11.jpg" alt=""></li>
+							</ul>
+							<div class="details">
+								<div class="price">от 2 250 руб.</div>
+								<a href="#" class="btn">Забронировать</a>
+								<div class="phone">+7 (8622) ** ** **</div>
+								Написать напрямую
+							</div>
 						</div>
+						<div class="map-holder" id="map-holder" data-lat="55.755814" data-lng="37.617635"></div>
+					</div>
+				</div>
+				<div class="back-to-catalog">
+					<div>
+						<a href="#">Другие усадьбы</a>
 					</div>
 				</div>
 			</div>
@@ -153,7 +201,11 @@
 				</ul>
 			</div>
 		</footer>
-		<script src="js/common.js"></script>
-		<script src="js/main.js"></script>
+		<!-- build:js js/common.js -->
+		<script src="/bower_components/jquery/dist/jquery.js"></script>
+		<!-- endbuild -->
+		<!-- build:js js/main.js -->
+		<script src="js/app.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>
