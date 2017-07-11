@@ -57,5 +57,17 @@ $(function () {
       });
     }
   });
+
+  $('.inner-page.catalog-single .image-gallery').on('click', 'a', function (event) {
+    event.preventDefault();
+    var href = $(this).attr('href');
+    var image = $(this).closest('.image-gallery').find('.main-image img').first();
+    $(image).attr('src', '');
+    var $downloadingImage = $('<img>');
+    $downloadingImage.load(function () {
+      image.attr('src', $(this).attr('src'));
+    });
+    $downloadingImage.attr('src', href);
+  });
 });
 

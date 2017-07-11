@@ -383,6 +383,12 @@
           margin 0 -7px 70px 0
           clearfix()
 
+          img {
+            background-color #f6f9fa
+          }
+          a {
+            display inline-block
+          }
           li {
             width 62px
             float left
@@ -392,6 +398,13 @@
             &.main-image {
               float none
               width 100%
+
+              img {
+                max-width 269px
+                min-width 269px
+                min-height 201px
+                background url(../img/static/loading.gif) center no-repeat #f6f9fa
+              }
             }
           }
         }
